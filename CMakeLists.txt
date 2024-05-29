@@ -22,7 +22,7 @@ list(APPEND CMAKE_PREFIX_PATH ${OPENAL_PATH})
 find_package(OpenAL REQUIRED)
 
 
-add_executable(audio ${SOURCE} ${INCLUDE})
+add_library(audio ${SOURCE} ${INCLUDE})
 
 target_include_directories(audio PRIVATE source)
 
